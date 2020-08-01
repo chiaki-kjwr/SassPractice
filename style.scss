@@ -1,20 +1,14 @@
 $primary-color:rgb(6,58,155);
-$btn:100px;
-@mixin:align-center {
-
-}
 
 .container {
     h1 {
       color:red;
       margin-bottom:0;
-      @media screen and (min-width:480px) {
-        font-size:.8rem
-      }
+      font-size: 20px;
+
     }
     p{
       color:$primary-color;
-
     }
     a{
       color:black;
@@ -23,10 +17,13 @@ $btn:100px;
           color:$primary-color;
         }
     }
-    .btn {
-      background-color: $primary-color;
-        &.btn-large{
-          width:$btn *2;
-        }
-    }
-  }
+}
+.btn{
+  background-color: red;
+  padding: 5px;
+}
+
+.btn-alert{
+  @extend .btn;
+  background-color:blue;
+}

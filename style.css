@@ -1,12 +1,7 @@
 .container h1 {
   color: red;
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .container h1 {
-    font-size: .8rem;
-  }
+  font-size: 20px;
 }
 
 .container p {
@@ -22,11 +17,12 @@
   color: #063a9b;
 }
 
-.container .btn {
-  background-color: #063a9b;
+.btn, .btn-alert {
+  background-color: red;
+  padding: 5px;
 }
 
-.container .btn.btn-large {
-  width: 200px;
+.btn-alert {
+  background-color: blue;
 }
 /*# sourceMappingURL=style.css.map */
