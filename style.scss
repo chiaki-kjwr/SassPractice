@@ -1,29 +1,32 @@
-$primary-color:rgb(6,58,155);
+$width:100px;
 
 .container {
     h1 {
-      color:red;
+      color:lighten(blue,50%);
       margin-bottom:0;
       font-size: 20px;
 
     }
-    p{
-      color:$primary-color;
-    }
+
     a{
       color:black;
         &:hover {
           text-decoration: none;
-          color:$primary-color;
         }
     }
 }
 .btn{
   background-color: red;
   padding: 5px;
+  width:$width;
+}
+.btnCeil{
+  width: ceil($width / 3);
+}
+.btnFloor{
+  width:floor($width / 3);
 }
 
-.btn-alert{
-  @extend .btn;
-  background-color:blue;
+@function half($value){
+  @return ceil($value / 2);
 }

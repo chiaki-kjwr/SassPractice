@@ -1,11 +1,7 @@
 .container h1 {
-  color: red;
+  color: white;
   margin-bottom: 0;
   font-size: 20px;
-}
-
-.container p {
-  color: #063a9b;
 }
 
 .container a {
@@ -14,15 +10,19 @@
 
 .container a:hover {
   text-decoration: none;
-  color: #063a9b;
 }
 
-.btn, .btn-alert {
+.btn {
   background-color: red;
   padding: 5px;
+  width: 100px;
 }
 
-.btn-alert {
-  background-color: blue;
+.btnCeil {
+  width: 34px;
+}
+
+.btnFloor {
+  width: 33px;
 }
 /*# sourceMappingURL=style.css.map */
